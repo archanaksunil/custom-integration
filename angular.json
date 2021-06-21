@@ -103,6 +103,13 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://github.com/archanaksunil/custom-integration.git/",
+            "name": "CodeStream Custom Integration"
+          }
         }
       }
     },
