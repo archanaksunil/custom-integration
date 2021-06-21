@@ -40,6 +40,19 @@ var environment = {
 
 /***/ }),
 
+/***/ "RUmj":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/integration-list/integration-list.component.html ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("hello there");
+
+/***/ }),
+
 /***/ "Sy1n":
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
@@ -85,7 +98,7 @@ var AppComponent = /** @class */ (function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<clr-main-container>\n  <clr-header>\n    <div class=\"branding\">\n      <clr-icon shape=\"vm-bug\"></clr-icon>\n      <span class=\"title\">CodeStream Custom Integration</span>\n    </div>\n  </clr-header>\n  <div class=\"content-container\">\n    <main class=\"content-area\">\n      <integration-list></integration-list>\n    </main>\n  </div>\n</clr-main-container>");
+/* harmony default export */ __webpack_exports__["default"] = ("<clr-main-container>\n  <header class=\"header header-6\">\n    <div class=\"branding\">\n      <a href=\"/\" class=\"nav-link\">\n        <clr-icon shape=\"vm-bug\"></clr-icon>\n        <span class=\"title\">Codestream Custom Integration</span>\n    </a>\n    </div>\n  </header>\n  <div class=\"content-container\">\n    <div class=\"content-area\">\n      <integration-list></integration-list>\n    </div>\n  </div>\n</clr-main-container>");
 
 /***/ }),
 
@@ -104,6 +117,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _clr_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @clr/angular */ "8MG2");
+/* harmony import */ var _integration_list_integration_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./integration-list/integration-list.component */ "nX5Q");
+
+
 
 
 
@@ -115,17 +132,68 @@ var AppModule = /** @class */ (function () {
     AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                _integration_list_integration_list_component__WEBPACK_IMPORTED_MODULE_6__["IntegrationListComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                _clr_angular__WEBPACK_IMPORTED_MODULE_5__["ClarityModule"],
+                _clr_angular__WEBPACK_IMPORTED_MODULE_5__["ClrIconModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "hmly":
+/*!******************************************************************!*\
+  !*** ./src/app/integration-list/integration-list.component.scss ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJpbnRlZ3JhdGlvbi1saXN0LmNvbXBvbmVudC5zY3NzIn0= */");
+
+/***/ }),
+
+/***/ "nX5Q":
+/*!****************************************************************!*\
+  !*** ./src/app/integration-list/integration-list.component.ts ***!
+  \****************************************************************/
+/*! exports provided: IntegrationListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IntegrationListComponent", function() { return IntegrationListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_integration_list_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./integration-list.component.html */ "RUmj");
+/* harmony import */ var _integration_list_component_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./integration-list.component.scss */ "hmly");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+var IntegrationListComponent = /** @class */ (function () {
+    function IntegrationListComponent() {
+    }
+    IntegrationListComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+            selector: 'integration-list',
+            template: _raw_loader_integration_list_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+            styles: [_integration_list_component_scss__WEBPACK_IMPORTED_MODULE_2__["default"]]
+        })
+    ], IntegrationListComponent);
+    return IntegrationListComponent;
 }());
 
 
